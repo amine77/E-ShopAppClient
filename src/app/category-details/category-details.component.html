@@ -1,0 +1,18 @@
+<div *ngIf="category">
+  <div>
+    <label>Id: </label> {{category.id}}
+  </div>
+  <div>
+    <label>Name: </label> {{category.name}}
+  </div>
+  <div>
+    <label>Description: </label> {{category.description}}
+  </div>
+
+  <span class="button is-small btn-primary" (click)='updateCategory()'>Mettre à jour</span>
+
+
+  <span class="button is-small btn-danger" (click)='deleteCategory()'>Delete</span>
+
+  <hr/>
+</div>

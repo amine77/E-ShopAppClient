@@ -1,0 +1,12 @@
+<h1>Category</h1>
+<nav>
+  <a routerLink="category" class="btn btn-primary active" role="button" routerLinkActive="active">Categories</a>
+</nav>
+<div *ngFor="let category of categories | async" style="width: 300px;">
+  <app-category-details [category]='category'></app-category-details>
+  <!--<div class="row">{{category.id}} - {{category.description}}</div>-->
+</div>
+
+<div>
+  <button type="button" class="button btn-danger" (click)='deleteCategories()'>Delete All</button>
+</div>
